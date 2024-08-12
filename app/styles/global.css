@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navbar {
+    height: 3rem; /* Contoh untuk mengatur tinggi navbar */
+    backdrop-filter: blur(4px);
+  }
+  
+  .navbar a,
+  .navbar .btn,
+  .navbar svg {
+    font-size: 0.875rem; /* Ukuran teks lebih kecil */
+    padding: 0.5rem; /* Kurangi padding */
+  }
+  
+
+/* darkmode */
+[data-theme="dark"] 
+.btn {
+    border-width: 2px;
+    border-color: rgb(255, 251, 0);
+  }
+.navbar {
+    background-color: (var(--bc))
+}
+
+/* lightmode */
+[data-theme="light"]
+.btn {
+    background-color: blueviolet;
+    border-color: oklch(var(--pc));
+    border-width: 2px;
+.navbar {
+    background-color: oklch(var(--b3));
+}}
