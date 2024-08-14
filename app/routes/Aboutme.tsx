@@ -1,4 +1,5 @@
 import { MetaFunction } from "@remix-run/react";
+import Footer from "~/components/Footer";
 import Navbar from "~/components/Navbar";
 
 export let meta: MetaFunction = () => {
@@ -32,6 +33,7 @@ export default function Aboutme() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

@@ -8,7 +8,7 @@ import { MetaFunction } from '@remix-run/react';
 export let meta: MetaFunction = () => {
   return [
     { title: "Bima Adam | PortfolioV2" },
-    { name: "description", content: "This is a description for Remix page" }
+    { name: "description", content: "Portfolio v2 by Bima Adam with React Remix and daisyUI" }
   ];
 };
 
