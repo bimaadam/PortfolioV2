@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 // components/Navbar.tsx
+import { Link } from '@remix-run/react';
 import ThemeSwitcher from './ThemeSwitcher';
 
 const Navbar = () => {
@@ -25,32 +26,32 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
+        <li><Link to='/Aboutme'>About Me</Link></li>
+      <li>
+          <a>Projects</a>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href='https://bimaadamrin.my.id'>My Profile</a></li>
+            <li><a href='https://chataibima.bimaadamrin.my.id'>Chat Ai</a></li>
           </ul>
         </li>
-        <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">BimaAdam</a>
+    <Link to="/" className="btn btn-ghost text-xl">
+  BimaAdam
+  </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Item 1</a></li>
+      <li><Link to='/Aboutme'>About Me</Link></li>
       <li>
         <details>
-          <summary>Parent</summary>
+          <summary>Projects</summary>
           <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a href='https://bimaadamrin.my.id'>My Profile</a></li>
+            <li><a href='https://chataibima.bimaadamrin.my.id'>Chat Ai</a></li>
           </ul>
         </details>
       </li>
-      <li><a>Item 3</a></li>
     </ul>
   </div>
   <div className="navbar-end">
