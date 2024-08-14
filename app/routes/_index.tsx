@@ -3,6 +3,14 @@ import Navbar from '~/components/Navbar';
 import '~/styles/global.css';
 import Footer from '~/components/Footer';
 import Typed from 'typed.js';
+import { MetaFunction } from '@remix-run/react';
+
+export let meta: MetaFunction = () => {
+  return [
+    { title: "Bima Adam | PortfolioV2" },
+    { name: "description", content: "This is a description for Remix page" }
+  ];
+};
 
 export default function Index() {
   const typedElement = useRef(null);

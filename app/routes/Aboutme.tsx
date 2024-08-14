@@ -1,4 +1,13 @@
+import { MetaFunction } from "@remix-run/react";
 import Navbar from "~/components/Navbar";
+
+export let meta: MetaFunction = () => {
+  return [
+    { title: "About Me | PortfolioV2" },
+    { name: "description", content: "This is a description for Remix page" }
+  ];
+};
+
 
 export default function Aboutme() {
   return (
